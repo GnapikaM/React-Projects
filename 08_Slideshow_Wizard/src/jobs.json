@@ -1,0 +1,30 @@
+[
+    {
+        "id": 1,
+        "image": "https://images.unsplash.com/photo-1602442787305-decbd65be507?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MjZ8fHdvbWVufGVufDB8fDB8fHww&auto=format&fit=crop&w=600&q=60",
+        "name": "SUSAN ANDERSEN",
+        "job": "The Boss",
+        "desc": "Marfa af yr 3 wolf moon kogi, readymade distillery asymmetrical seitan kale chips fingerstache cloud bread mustache twee messenger bag."
+    },
+    {
+        "id": 2,
+        "image": "https://images.unsplash.com/photo-1588516903720-8ceb67f9ef84?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTh8fHdvbWVufGVufDB8fDB8fHww&auto=format&fit=crop&w=600&q=60",
+        "name": "MARIA FERGUSON",
+        "job": "Office Manager",
+        "desc": "Fingerstache umami squid, kinfolk subway tile selvage tumblr man braid viral kombucha gentrify fanny pack raclette pok pok mustache."
+    },
+    {
+        "id": 3,
+        "image": "https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8bWVufGVufDB8fDB8fHww&auto=format&fit=crop&w=600&q=60",
+        "name": "PETER SMITH",
+        "job": "Product Designer",
+        "desc": "Drinking vinegar polaroid street art echo park, actually semiotics next level butcher master cleanse hammock flexitarian ethical paleo."
+    },
+    {
+        "id": 4,
+        "image": "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Nnx8bWVufGVufDB8fDB8fHww&auto=format&fit=crop&w=600&q=60",
+        "name": "JOHN DOE",
+        "job": "Regular Guy",
+        "desc": "Gastropub sustainable tousled prism occupy. Viral XOXO roof party brunch actually, chambray listicle microdosing put a bird on it paleo subway tile squid umami."
+    }
+]
