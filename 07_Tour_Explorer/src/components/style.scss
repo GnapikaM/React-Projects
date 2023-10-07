@@ -1,0 +1,176 @@
+:root {
+    --transition: all .3s linear;
+    --light-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    --dark-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    --spacing: 0.05rem;
+    --radius: 0.25rem;
+    --clr-green-dark: rgb(2, 153, 103);
+    --clr-red-dark: rgb(153, 17, 2);
+}
+
+*, ::after, ::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+ul {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+h1,
+h2,
+h3,
+h4 {
+    letter-spacing: var(--spacing);
+    text-transform: capitalize;
+}
+
+h1 {
+    font-size: 4rem;
+}
+h2 {
+    font-size: 2.5rem;
+}
+h3 {
+    font-size: 1.3rem;
+}
+h4 {
+    font-size: 1.15rem;
+}
+p {
+    margin: 0 1rem;
+    margin-bottom: 1.25rem;
+    line-height: 1.3rem;
+}
+
+.title {
+    h2 {
+        margin: 2rem;
+        text-align: center;
+        text-decoration: underline;
+        text-underline-offset: 10px;
+        text-decoration-color: var(--clr-green-dark);
+    }
+}
+
+.refresh {
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+
+    h3 {
+        text-align: center;
+        margin: 2rem 0;
+    }
+
+    button {
+        height: auto;
+        width: auto;
+        background-color: white;
+        margin: 1rem;
+        border: 1px solid var(--clr-green-dark);
+        color: var(--clr-green-dark);
+        padding: .5rem;
+        box-shadow: var(--light-shadow);
+        border-radius: var(--radius);
+        cursor: pointer;
+        transition: var(--transition);
+    }
+}
+
+.all-tours {
+    display: flex;
+    margin: 5rem;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.single-tour {
+    height: 100%;
+    width: 320px;
+    border-radius: var(--radius);
+    margin: 20px;
+    position: relative;
+    box-shadow: var(--light-shadow);
+    transition: var(--transition);
+
+    &:hover {
+        box-shadow: var(--dark-shadow);
+    }
+
+    img {
+        width: 100%;
+        height: 300px;
+        border-top-left-radius: var(--radius);
+        border-top-right-radius: var(--radius);
+    }
+
+    footer {
+        .tour-info {
+            h4 {
+                text-align: center;
+                margin: .7rem 0;
+            }
+
+            .tour-price {
+                background-color: var(--clr-green-dark);
+                color: white;
+                position: absolute;
+                top: -.7rem;
+                right: 0;
+                padding: 7px;
+                border-top-right-radius: var(--radius);
+            }
+        }
+
+        p {
+            button {
+                color: var(--clr-green-dark);
+                background: white;
+                border: none;
+                outline: none;
+                cursor: pointer;
+                font-weight: bold;
+            }
+        }
+
+        .delete-btn {
+            background-color: white;
+            margin: 0 1rem;
+            margin-bottom: 1rem;
+            width: 90%;
+            border: 1px solid var(--clr-red-dark);
+            color: var(--clr-red-dark);
+            padding: .5rem;
+            box-shadow: var(--light-shadow);
+            border-radius: var(--radius);
+            cursor: pointer;
+            transition: var(--transition);
+
+            &:hover {
+                color: white;
+                box-shadow: var(--dark-shadow);
+                background-color: var(--clr-red-dark);
+            }
+        }
+    }
+}
+
+@media (max-width: 885px) {
+    .all-tours {
+        margin: 0;
+    }
+}
+
+@media (max-width: 554px) {
+    .all-tours {
+        margin: 0;
+    }
+}
