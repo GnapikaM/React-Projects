@@ -1,0 +1,184 @@
+:root {
+    --transition: 0.3s ease-in-out;
+    --clr-more-dark-brown: #4a3d3d;
+    --clr-dark-brown: #867070;
+    --clr-light-brown: #D5B4B4;
+    --clr-background: #F5EBEB;
+    --clr-li: #646464;
+}
+
+*, ::after, ::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    background-color: var(--clr-background);
+}
+
+.section {
+    margin: 2rem;
+
+    .title {
+        text-align: center;
+        text-decoration: underline;
+        text-underline-offset: 10px;
+        text-decoration-thickness: 2.5px;
+        text-decoration-color: var(--clr-more-dark-brown);
+        color: var(--clr-dark-brown);
+    }
+
+    .job-details {
+        display: flex;
+        justify-content: space-between;
+
+        .companies {
+            display: flex;
+            flex-direction: column;
+            margin: 2rem;
+
+            button {
+                border: none;
+                outline: none;
+                background-color: var(--clr-background) ;
+                color: var(--clr-more-dark-brown);
+                border-left: 2px solid transparent;
+                margin: 0.7rem;
+                padding: .5rem;
+                width: 200px;
+                cursor: pointer;
+                transition: var(--transition);
+
+                &:hover {
+                    border-left: 2px solid rgba(74, 61, 61, 0.5);
+                }
+            }
+
+            .active-btn {
+                border-left: 2px solid black;
+                font-weight: bold;
+            }
+        }
+
+        .experience {
+            margin: 1rem;
+
+            h2 {
+                margin: 1rem 0;
+                margin-top: 1.8rem;
+                color: var(--clr-more-dark-brown);
+            }
+
+            h3 {
+                margin: 1rem 0;
+                background-color: var(--clr-light-brown);
+                color: var(--clr-dark-brown);
+                width: 100px;
+                padding: .4rem;
+                border-radius: 5px;
+                text-align: center;
+            }
+
+            .job-date {
+                color: var(--clr-dark-brown);
+            }
+
+            .job-duties {
+                margin-top: 2rem;
+
+                li {
+                    list-style-type: none;
+                    margin: 1rem 0;
+                    margin-bottom: 1.5rem;
+                    display: flex;
+
+                    .job-icon {
+                        margin-right: 1rem;
+                        font-size: 1.2rem;
+                        color: var(--clr-more-dark-brown);
+                    }
+
+                    .duty {
+                        width: 80%;
+                        font-size: 0.85rem;
+                        color: var(--clr-li);
+                    }
+                }
+            }
+
+            .btn {
+                outline: none;
+                border: none;
+                padding: .7rem 1rem;
+                border-radius: 5px;
+                font-weight: bold;
+                animation: zoomInOut 1.5s ease-in-out infinite;
+                background-color: var(--clr-dark-brown);
+                color: white;
+                cursor: pointer;
+
+                @keyframes zoomInOut {
+                    0% {
+                        transform: scale(1);
+                    }
+                    50% {
+                        transform: scale(1.1);
+                    }
+                    100% {
+                        transform: scale(1);
+                    }
+                }
+
+                &:hover {
+                    animation: none;
+                    transform: scale(1.1);
+                }
+            }   
+        }
+    }
+}
+
+@media (max-width: 745px) {
+    .section {
+        .job-details {
+            flex-direction: column;
+            align-items: center;
+
+            .companies {
+                flex-direction: row;
+
+                button {
+                    width: 73px;
+
+                    &:hover {
+                        border-left: none;
+                        border-bottom: 2px solid rgba(0, 0, 0, 0.4);
+                    }
+                }
+            }
+    
+            .experience {
+    
+                h2 {
+                    margin-top: 0;
+                }
+    
+                .job-duties {
+    
+                    li {
+                        .duty {
+                            width: 100%;
+                        }
+                    }
+                }
+                
+                .btn {
+                    position: absolute;
+                    left: 45%;
+                }
+            }
+        }
+    }
+}   
