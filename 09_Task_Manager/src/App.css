@@ -1,0 +1,79 @@
+body {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background: #f2f2f2;
+  }
+  
+  h1 {
+    text-align: center;
+    color: #252B48;
+  }
+  
+  .input {
+    text-align: center;
+    margin: 4rem 0;
+  }
+  
+  .input input {
+    padding: 1rem;
+    outline: none;
+    border: 1px solid #5B9A8B;
+    width: 50%;
+    font-size: 1rem;
+    color: #445069;
+  }
+  
+  .input input:focus {
+    border: 1px solid #252B48;
+  }
+  
+  button {
+    padding: 1rem;
+    outline: none;
+    border:  1px solid #5B9A8B;
+    background-color: rgb(91, 154, 139);
+    color: white;
+    cursor: pointer;
+    font-size: 1rem;
+  }
+  
+  button:focus {
+    border:  1px solid  #252B48;
+    background-color:  rgb(37, 43, 72);
+  }
+  
+  ul {
+    padding: 0;
+    margin: 0 auto;
+    max-width: 765px;
+  }
+  
+  li {
+    list-style: none;
+    padding: 1.4rem;
+    position: relative;
+  }
+  
+  li:nth-child(odd) {
+    background-color: rgba(37, 43, 72, 0.2);
+  }
+  
+  li:nth-child(even) {
+    background-color: rgba(37, 43, 72, 0.1);
+  }
+  
+  li input[type= 'checkbox'] {
+    cursor: pointer;
+  }
+  
+  li span {
+    font-size: 1.2rem;
+    padding-left: 1rem;
+    color: #445069;
+  }
+  
+  li button {
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translate(-10%, -50%);
+  }
