@@ -1,0 +1,73 @@
+:root {
+    --clr-light-pink: #FFE3E1;
+    --clr-dark-pink: #F38181;
+    --clr-light-gray: #8f9093; 
+    --clr-dark-gray: #797A7E;
+    --transition: 0.3s linear;
+    --dark-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    --letter-spacing: 1px;
+}
+
+*, *::after, *::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--clr-light-pink);
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.container {
+
+    .accordian {
+        margin: 4rem auto;
+        width: 800px;
+        height: auto;
+        background-color: white;
+        border-radius: 5px;
+        box-shadow: var(--dark-shadow);
+        padding: 2rem;
+
+        h1 {
+            color: var(--clr-dark-pink);
+            text-align: center;
+        }
+
+        .questions {
+            margin: 2rem;
+            padding: 1rem;
+            box-shadow: var(--dark-shadow);
+
+            .question {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+
+                h3 {
+                    letter-spacing: var(--letter-spacing);
+                    color: var(--clr-dark-gray);
+                }
+
+                ion-icon {
+                    font-size: 1.7rem;
+                    color: var(--clr-dark-pink);
+                    cursor: pointer;
+                    transition: var(--transition);
+
+                    &:hover {
+                        transform: scale(1.1);
+                    }
+                }
+            }
+
+            .answer {
+                color: var(--clr-light-gray);
+                padding-top: .5rem;
+                letter-spacing: var(--letter-spacing);
+                line-height: 25px;
+            }
+        }
+    }
+}
